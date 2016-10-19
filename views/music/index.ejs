@@ -1,0 +1,16 @@
+<% include ../partials/header.ejs  %>
+<h1>ALL Music Details</h1>
+
+<ul>
+    <% musicArr.forEach(function(music) { %>
+      <li>
+        Album Name: <%=album %><br>
+        Artist: <%=artist %><br>
+        Year: <%=year %><br>
+        Label: <%=label %><br>
+        Genre: <%=genre %>
+        <br><br>
+      </li>
+    <% }) %>
+</ul>
+<% include ../partials/footer.ejs  %>

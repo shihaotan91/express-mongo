@@ -1,0 +1,35 @@
+<% include ../partials/header.ejs  %>
+
+<h1>NEW MUSIC FORM</h1>
+
+<form method="post" action="/music">
+
+  <div class="form-group">
+    <label for="album">Album Name</label>
+    <input type="text" class="form-control" id="album_name" name="album" placeholder="Music Album">
+  </div>
+
+  <div class="form-group">
+    <label for="artist">Artist</label>
+    <input type="text" class="form-control" id="artist" name="artist" placeholder="Music Artist">
+  </div>
+
+  <div class="form-group">
+    <label for="year">Year</label>
+    <input type="Number" class="form-control" id="year" name="year" placeholder="Year">
+  </div>
+
+  <%# <div class="form-group">
+    <label for="label">Label</label>
+    <input type="text" class="form-control" id="label" name="label" placeholder="Label">
+  </div>
+
+  <div class="form-group">
+    <label for="genre">Genre</label>
+    <input type="text" class="form-control" id="genre" name="genre" placeholder="Genre">
+  </div>%>
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<% include ../partials/footer.ejs  %>
